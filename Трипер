@@ -1,7 +1,1 @@
-эхо "# Трипер" >> README.md
-git init
-git добавить README.md
-git commit -m "первый коммит"
-git ветка -M main
-git удаленное добавление происхождения https://github.com/zjfhyphwwv-dotcom/Triper.git
-git push -u происхождение main
+git add/commit/push
