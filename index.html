@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triper Experiences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="logo" href="#">Triper</a>
+      <nav class="main-nav">
+        <a href="#experiences">Впечатления</a>
+        <a href="#destinations">Направления</a>
+        <a href="#guides">Гиды</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a class="lang-switch" href="#">RU</a>
+        <a class="signin" href="#">Войти</a>
+        <a class="cta" href="#search">Создать путешествие</a>
+      </div>
+      <button class="menu-toggle" aria-label="Открыть меню"></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="search">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Городские приключения и эмоции</p>
+          <h1>Откройте новое лицо вашего города с локальными гидами</h1>
+          <p class="description">
+            Triper объединяет профессиональных экскурсоводов и увлечённых жителей, чтобы делиться лучшими впечатлениями по всему миру.
+          </p>
+          <form class="search-form">
+            <label class="search-field">
+              <span>Куда едем?</span>
+              <input type="text" placeholder="Москва, Санкт-Петербург, Казань…" aria-label="Город или направление">
+            </label>
+            <label class="search-field">
+              <span>Когда?</span>
+              <input type="date" aria-label="Дата путешествия">
+            </label>
+            <label class="search-field">
+              <span>Гости</span>
+              <select aria-label="Количество гостей">
+                <option>1 путешественник</option>
+                <option>2 путешественника</option>
+                <option>3 путешественника</option>
+                <option>4 путешественника</option>
+                <option>Группа 5+</option>
+              </select>
+            </label>
+            <button type="submit">Найти впечатления</button>
+          </form>
+          <ul class="highlights">
+            <li>5000+ авторских маршрутов</li>
+            <li>Гарантия возврата средств</li>
+            <li>24/7 поддержка путешественников</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?auto=format&fit=crop&w=600&q=80" alt="Прогулка по городу">
+          <div class="card-content">
+            <p class="card-title">Секреты Петербурга</p>
+            <p class="card-text">Ночной вояж по крышам с видом на разводные мосты</p>
+            <div class="card-meta">
+              <span class="rating">★ 4.9</span>
+              <span class="duration">2,5 часа</span>
+              <span class="price">от 2 900 ₽</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories" id="experiences">
+      <div class="container">
+        <h2>Подберите впечатление под настроение</h2>
+        <p class="section-intro">Выбирайте из курируемых подборок: гастрономические туры, арт-прогулки, семейные маршруты, активные приключения и многое другое.</p>
+        <div class="category-grid">
+          <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Гастрономический тур">
+            <div class="category-info">
+              <h3>Гастрономия</h3>
+              <p>От уличных рынков до авторских дегустаций от шефов.</p>
+            </div>
+          </article>
+          <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" alt="Историческая экскурсия">
+            <div class="category-info">
+              <h3>История и культура</h3>
+              <p>Инсайдерские маршруты по легендарным кварталам и музеям.</p>
+            </div>
+          </article>
+          <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1529429617124-aee0a6a031d1?auto=format&fit=crop&w=600&q=80" alt="Природа и активный отдых">
+            <div class="category-info">
+              <h3>Природа и активный отдых</h3>
+              <p>Хайкинг, сапборды и путешествия за пределами города.</p>
+            </div>
+          </article>
+          <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=600&q=80" alt="Семейные впечатления">
+            <div class="category-info">
+              <h3>Для всей семьи</h3>
+              <p>Интерактивные спектакли, квесты и тематические маршруты.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations" id="destinations">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Популярные направления этого сезона</h2>
+          <a class="link" href="#">Показать все направления</a>
+        </div>
+        <div class="destination-grid">
+          <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1505842332813-380b92700493?auto=format&fit=crop&w=600&q=80" alt="Москва">
+            <div class="destination-info">
+              <h3>Москва</h3>
+              <p>90+ впечатлений • от 1 500 ₽</p>
+            </div>
+          </article>
+          <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80" alt="Санкт-Петербург">
+            <div class="destination-info">
+              <h3>Санкт-Петербург</h3>
+              <p>120+ впечатлений • от 1 900 ₽</p>
+            </div>
+          </article>
+          <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1553185353-9aa4de61010e?auto=format&fit=crop&w=600&q=80" alt="Казань">
+            <div class="destination-info">
+              <h3>Казань</h3>
+              <p>35 впечатлений • от 1 200 ₽</p>
+            </div>
+          </article>
+          <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1526481280695-3c46997bedbb?auto=format&fit=crop&w=600&q=80" alt="Сочи">
+            <div class="destination-info">
+              <h3>Сочи</h3>
+              <p>48 впечатлений • от 2 100 ₽</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="guides" id="guides">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Локальные гиды, которые влюбят вас в город</h2>
+          <a class="link" href="#">Стать гидом</a>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-card">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Гид Анна">
+            <div class="guide-info">
+              <h3>Анна Смирнова</h3>
+              <p>Историк и коллекционер городских легенд</p>
+              <span class="guide-rating">★ 4.95</span>
+            </div>
+          </article>
+          <article class="guide-card">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Гид Алексей">
+            <div class="guide-info">
+              <h3>Алексей Романов</h3>
+              <p>Любитель авторских баров и гастрономических историй</p>
+              <span class="guide-rating">★ 4.87</span>
+            </div>
+          </article>
+          <article class="guide-card">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80" alt="Гид Мария">
+            <div class="guide-info">
+              <h3>Мария Петрова</h3>
+              <p>Фотограф и рассказчик об уличном искусстве</p>
+              <span class="guide-rating">★ 4.92</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="container trust-content">
+        <div class="trust-text">
+          <h2>Почему путешественники выбирают Triper</h2>
+          <p>Мы создаём сервис, которому доверяют миллионы пользователей. Каждая экскурсия проверяется редакторами, а ваши бронирования защищены.</p>
+          <ul>
+            <li>Гибкие условия отмены и переноса даты</li>
+            <li>Личные рекомендации от экспертов и местных жителей</li>
+            <li>Подтверждённые отзывы и прозрачные рейтинги</li>
+          </ul>
+        </div>
+        <div class="trust-stats">
+          <div class="stat-card">
+            <span class="stat-number">1 млн+</span>
+            <span class="stat-label">довольных путешественников</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">70+</span>
+            <span class="stat-label">городов в каталоге</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">4.9/5</span>
+            <span class="stat-label">средняя оценка впечатлений</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2>Отзывы путешественников</h2>
+        <div class="testimonial-grid">
+          <figure class="testimonial-card">
+            <blockquote>«Маршрут по крышам Петербурга оказался лучшим подарком себе. Гид невероятно внимательный, а виды — просто сказка»</blockquote>
+            <figcaption>— Екатерина, Москва</figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <blockquote>«Забронировали гастротур в Самаре: узнали новые места и попробовали блюда, которые сами бы не нашли»</blockquote>
+            <figcaption>— Илья и Марина, Казань</figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <blockquote>«Очень удобно бронировать и получать поддержку. Ответили на все вопросы за пару минут»</blockquote>
+            <figcaption>— Светлана, Новосибирск</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2>Частые вопросы</h2>
+        <div class="faq-list">
+          <details open>
+            <summary>Как происходит бронирование впечатления?</summary>
+            <p>Выберите понравившийся маршрут, укажите дату и количество участников. После подтверждения гида вы получите электронный билет и инструкции.</p>
+          </details>
+          <details>
+            <summary>Можно ли отменить или перенести экскурсию?</summary>
+            <p>Да, большинство впечатлений допускают бесплатную отмену за 24 часа до начала. Условия отображаются в карточке тура.</p>
+          </details>
+          <details>
+            <summary>Как стать гидом на Triper?</summary>
+            <p>Заполните анкету, расскажите о себе и своих маршрутах. Команда Triper свяжется с вами для проверки и поможет опубликовать впечатление.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-content">
+        <div>
+          <h2>Готовы к новым впечатлениям?</h2>
+          <p>Соберите команду друзей, выберите настроение — и отправляйтесь исследовать мир вместе с Triper.</p>
+        </div>
+        <a class="cta" href="#search">Начать путешествие</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="#">Triper</a>
+        <p class="footer-text">Сервис по поиску и бронированию необычных впечатлений с локальными гидами.</p>
+      </div>
+      <div>
+        <h3>Путешественникам</h3>
+        <ul>
+          <li><a href="#">Как это работает</a></li>
+          <li><a href="#">Гарантии</a></li>
+          <li><a href="#">Подарочные сертификаты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Гидам</h3>
+        <ul>
+          <li><a href="#">Стать партнёром</a></li>
+          <li><a href="#">Требования</a></li>
+          <li><a href="#">Советы по организации</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Поддержка</h3>
+        <ul>
+          <li><a href="#">Центр помощи</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Triper, 2024</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Telegram">Telegram</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navigation = document.querySelector('.main-nav');
+    const actions = document.querySelector('.header-actions');
+
+    menuToggle.addEventListener('click', () => {
+      navigation.classList.toggle('is-open');
+      actions.classList.toggle('is-open');
+      menuToggle.classList.toggle('is-active');
+    });
+  </script>
+</body>
+</html>
