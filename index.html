@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triper — планируйте путешествия</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="#" class="brand">Triper</a>
+            <nav class="site-nav">
+                <a href="#destinations">Направления</a>
+                <a href="#accommodations">Жильё</a>
+                <a href="#tours">Туры</a>
+                <a href="#stories">Истории</a>
+            </nav>
+            <div class="site-actions">
+                <button class="btn btn--ghost">Войти</button>
+                <button class="btn btn--primary">Регистрация</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1>Трипуйте с Triper</h1>
+                <p>
+                    Составляйте маршруты, бронируйте жильё и делитесь впечатлениями с
+                    друзьями. Triper объединяет лучшие предложения для свободных путешествий.
+                </p>
+                <form class="search-form">
+                    <label>
+                        <span>Куда</span>
+                        <input type="text" name="destination" placeholder="Город или страна" />
+                    </label>
+                    <label>
+                        <span>Заезд</span>
+                        <input type="date" name="checkin" />
+                    </label>
+                    <label>
+                        <span>Выезд</span>
+                        <input type="date" name="checkout" />
+                    </label>
+                    <label>
+                        <span>Гости</span>
+                        <input type="number" name="guests" min="1" value="2" />
+                    </label>
+                    <button type="submit" class="btn btn--primary">Найти</button>
+                </form>
+            </div>
+            <div class="hero__visual" aria-hidden="true">
+                <div class="hero__card">
+                    <span class="hero__badge">Популярно сейчас</span>
+                    <h2>Скандинавское приключение</h2>
+                    <p>Маршрут на 6 дней с жильём и экскурсиями по Осло и Бергену.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="destinations" class="section">
+            <div class="section__header">
+                <h2>Лучшие направления</h2>
+                <a href="#" class="section__link">Смотреть все</a>
+            </div>
+            <div class="destination-grid">
+                <article class="destination-card">
+                    <h3>Португалия</h3>
+                    <p>Сёрфинг, вино и старые улочки Лиссабона.</p>
+                </article>
+                <article class="destination-card">
+                    <h3>Япония</h3>
+                    <p>Современный Токио и тишина Киото в одном путешествии.</p>
+                </article>
+                <article class="destination-card">
+                    <h3>Грузия</h3>
+                    <p>Тбилиси, винные дороги и горные тропы Сванетии.</p>
+                </article>
+                <article class="destination-card">
+                    <h3>Чили</h3>
+                    <p>Патагония, пустыня Атакама и вкуснейшая кухня.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="accommodations" class="section section--accent">
+            <div class="section__header">
+                <div>
+                    <h2>Жильё, как на Booking</h2>
+                    <p class="section__subtitle">
+                        Подборки апартаментов, отелей и бутик-стей, адаптированные под ваши даты
+                        и предпочтения.
+                    </p>
+                </div>
+                <button type="button" class="btn btn--ghost" id="resetFilters">Сбросить</button>
+            </div>
+
+            <form class="filters" id="accommodationFilters">
+                <label>
+                    <span>Город</span>
+                    <select name="city">
+                        <option value="">Любой</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Тип жилья</span>
+                    <select name="type">
+                        <option value="">Любой</option>
+                        <option value="hotel">Отели</option>
+                        <option value="apartment">Апартаменты</option>
+                        <option value="boutique">Бутик-стей</option>
+                        <option value="villa">Виллы</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Цена за ночь</span>
+                    <select name="price">
+                        <option value="">Любая</option>
+                        <option value="budget">до 120€</option>
+                        <option value="mid">120–220€</option>
+                        <option value="premium">220€+</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Оценка гостей</span>
+                    <select name="rating">
+                        <option value="">Любая</option>
+                        <option value="8">8+ отличное</option>
+                        <option value="9">9+ восхитительное</option>
+                    </select>
+                </label>
+            </form>
+
+            <div class="accommodation-list" id="accommodationList" aria-live="polite"></div>
+        </section>
+
+        <section id="tours" class="section">
+            <div class="section__header">
+                <h2>Авторские туры</h2>
+                <a href="#" class="section__link">Все программы</a>
+            </div>
+            <div class="tour-grid">
+                <article class="tour-card">
+                    <h3>Норвегия: фьорды и сев. сияние</h3>
+                    <p>7-дневный тур с гидами и ночёвками в домиках на берегу.</p>
+                    <span>от 980€</span>
+                </article>
+                <article class="tour-card">
+                    <h3>Исландия: огонь и лёд</h3>
+                    <p>Поездка вокруг острова на внедорожниках и ночи в бутик-отелях.</p>
+                    <span>от 1350€</span>
+                </article>
+                <article class="tour-card">
+                    <h3>Италия: гастрономический уикенд</h3>
+                    <p>3 дня в Болонье с шеф-поварами и мастер-классами.</p>
+                    <span>от 520€</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="stories" class="section section--muted">
+            <div class="section__header">
+                <h2>Истории путешественников</h2>
+                <a href="#" class="section__link">Читать ещё</a>
+            </div>
+            <div class="story-grid">
+                <article class="story-card">
+                    <h3>Как провести неделю в Лиссабоне</h3>
+                    <p>Гид по любимым кафе, смотровым и серфингу.</p>
+                </article>
+                <article class="story-card">
+                    <h3>Семейное авто-путешествие по Хорватии</h3>
+                    <p>Маршрут из 12 мест для детей и взрослых.</p>
+                </article>
+                <article class="story-card">
+                    <h3>Бюджетный Бали</h3>
+                    <p>Где жить, что есть и как не переплачивать.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+            <div>
+                <strong>Triper</strong>
+                <p>Создано путешественниками для путешественников.</p>
+            </div>
+            <div>
+                <a href="#">О сервисе</a>
+                <a href="#">Поддержка</a>
+                <a href="#">Партнёрам</a>
+            </div>
+            <div>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Условия использования</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
